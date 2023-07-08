@@ -1,11 +1,28 @@
-//Controls Song Info
-const Artist = "Xenoblade Chronicles OST";
-const Song_Name = "You Will know Our Names";
-const Album_Art = "https://th.bing.com/th/id/R.91f6ea5a6e532e6bc9ac4a047156ddef?rik=MzObvgJb0iCPQw&pid=ImgRaw&r=0";
+const Songs = {
+    Song1: "You Will Know Our Names",
+    Song2: "Guar Plains",
+    Song3: "You Will Recall our Names"
+}
 
-document.getElementById("AlbumArt").src = Album_Art;
-document.getElementById("SongName").innerHTML = Song_Name;
-document.getElementById("Artist").innerHTML = Artist;
+const Art = {
+    AlbumArt1: "https://th.bing.com/th/id/R.91f6ea5a6e532e6bc9ac4a047156ddef?rik=MzObvgJb0iCPQw&pid=ImgRaw&r=0",
+    AlbumArt3: "https://th.bing.com/th/id/OIP.pP7Q3dNBlkZrnOEQ7EnktgHaEK?w=299&h=180&c=7&r=0&o=5&pid=1.7"
+}
+
+
+//Controls Song Info
+
+const SongInfo = {
+    Artist: "Xenoblade Chronicles Ost",
+    Song_Name: Songs.Song1,
+    Album_Art: Art.AlbumArt1
+}
+
+
+
+document.getElementById("AlbumArt").src = SongInfo.Album_Art;
+document.getElementById("SongName").innerHTML = SongInfo.Song_Name;
+document.getElementById("Artist").innerHTML = SongInfo.Artist;
 
 let MusicTime = document.getElementById("MusicTime");
 
@@ -54,21 +71,29 @@ function Backwards() {
     }
 }
 
+function Forward() {
+    console.log(Songs);
+}
+
+
+
+
+
 //test code
 
 if ('mediaSession' in navigator) {
 
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: Song_Name,
-      artist: Artist,
+      title: SongInfo.Song_Name,
+      artist: SongInfo.Artist,
       album: 'Whenever You Need Somebody',
       artwork: [
-        { src: Album_Art,   sizes: '96x96',   type: 'image/png' },
-        { src: Album_Art, sizes: '128x128', type: 'image/png' },
-        { src: Album_Art, sizes: '192x192', type: 'image/png' },
-        { src: Album_Art, sizes: '256x256', type: 'image/png' },
-        { src: Album_Art, sizes: '384x384', type: 'image/png' },
-        { src: Album_Art, sizes: '512x512', type: 'image/png' },
+        { src: SongInfo.Album_Art,   sizes: '96x96',   type: 'image/png' },
+        { src: SongInfo.Album_Art, sizes: '128x128', type: 'image/png' },
+        { src: SongInfo.Album_Art, sizes: '192x192', type: 'image/png' },
+        { src: SongInfo.Album_Art, sizes: '256x256', type: 'image/png' },
+        { src: SongInfo.Album_Art, sizes: '384x384', type: 'image/png' },
+        { src: SongInfo.Album_Art, sizes: '512x512', type: 'image/png' },
       ]
     });
   

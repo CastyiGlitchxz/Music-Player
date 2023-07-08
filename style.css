@@ -26,6 +26,7 @@ html {
     height: 250px;
     border-radius: 15%;
     margin-bottom: 30px;
+    object-fit: cover;
   }
 
   #SongInfo {
