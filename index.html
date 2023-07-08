@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cloud Songs</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/69e44b2a4c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <button class="nav_btn">Home</button>
+        <button class="nav_btn">Library</button>
+        <button class="nav_btn">Premium</button>
+        <img src="https://cdn.discordapp.com/attachments/872276337707065425/1114264910763917393/IMG_2760.png" id="pfp">
+        <input type="text" id="SongApply">
+        <button onclick="Apply();">Apply</button>
+    </div>
+
+  <div id="SongInfo">
+    <img id="AlbumArt" draggable="false">
+    <h2 id="SongName">{Song Name}</h2>
+    <p id="Artist">{Artist}</p>
+  </div>
+  
+  <div class="MusicControls">
+    <div id="TimeShow">
+        <input type="range" id="MusicTime" onchange="ChangeTime();" value="0">
+        <p id="Duration">0:00</p>
+    </div>
+
+    <div>
+        <button class="Controls"><i class="fa-solid fa-shuffle"></i></button>
+        <button class="Controls" onclick="Backwards();"><i class="fa-solid fa-backward-step"></i></button>
+        <button class="Controls" onclick="Play();"><i class="fa-solid fa-play"></i></button>
+        <button class="Controls"><i class="fa-solid fa-forward-step"></i></button>
+        <input type="checkbox" class="Controls" id="LoopBTN"><i class="fa-solid fa-repeat"></i>
+    </div>
+  </div>
+
+    <audio id="Audio" ontimeupdate="DisplayTime();" title="e">
+      <source src="Music/Xenoblade.mp3" title="e">
+    </audio>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
