@@ -43,5 +43,5 @@ function Backwards() {
 }
 
 function Forward() {
-    console.log(Songs);
+    console.log("Officialy doesn't work");
 }
