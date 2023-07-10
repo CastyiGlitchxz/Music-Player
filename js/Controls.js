@@ -8,7 +8,9 @@ function Play() {
 }
 
 function ChangeTime() {
-    document.getElementById("Audio").currentTime = MusicTime.value
+    document.getElementById("Audio").currentTime = MusicTime.value;
+
+    
 }
 
 function DisplayTime() {
@@ -17,6 +19,8 @@ function DisplayTime() {
     Duration.innerHTML = x;
 
     MusicTime.value = document.getElementById("Audio").currentTime;
+
+    document.getElementById("Audio").volume = document.getElementById("Volume").value;
 
     if (document.getElementById("LoopBTN").checked == true) {
         if (document.getElementById("Audio").currentTime == document.getElementById("Audio").duration) {

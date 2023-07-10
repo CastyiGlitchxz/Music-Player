@@ -43,7 +43,7 @@ if ('mediaSession' in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
       title: Songs[0],
       artist: SongInfo.Artist,
-      album: 'Whenever You Need Somebody',
+      album: 'Xenoblade Chronicles',
       artwork: [
         { src: SongInfo.Album_Art,   sizes: '96x96',   type: 'image/png' },
         { src: SongInfo.Album_Art, sizes: '128x128', type: 'image/png' },

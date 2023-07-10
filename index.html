@@ -17,7 +17,7 @@
         <button class="nav_btn">Library</button>
         <button class="nav_btn">Premium</button>
         <img src="https://cdn.discordapp.com/attachments/872276337707065425/1114264910763917393/IMG_2760.png" id="pfp">
-        <input type="text" id="SongApply">
+        <input type="text" id="SongApply" placeholder="Enter a URL">
         <button onclick="Apply();">Apply</button>
     </div>
 
@@ -45,7 +45,8 @@
         <button class="Controls" onclick="Backwards();"><i class="fa-solid fa-backward-step"></i></button>
         <button class="Controls" onclick="Play();"><i class="fa-solid fa-play"></i></button>
         <button class="Controls" onclick="Forward();"><i class="fa-solid fa-forward-step"></i></button>
-        <input type="checkbox" class="Controls" id="LoopBTN"><i class="fa-solid fa-repeat"></i>
+        <input type="checkbox" id="LoopBTN"><i class="fa-solid fa-repeat"></i>
+        <input type="range" max="1" id="Volume" step="0.01" value="1">
     </div>
   </div>
 

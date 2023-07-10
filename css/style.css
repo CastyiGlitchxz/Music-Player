@@ -76,7 +76,7 @@ html {
   background: white;
   width: 210px;
   z-index: 1;
-  height: 400px;
+  height: 60.8%;
   position: fixed;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -94,4 +94,19 @@ html {
   width: 40px;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+#SongApply {
+  border-radius: 14px;
+  height: 37px;
+  width: 180px;
+  margin: 4px;
+  border: 0px;
+  outline: none;
+  text-align: center;
+  transition: all 1s;
+}
+
+#SongApply:focus {
+  width: 280px;
 }
