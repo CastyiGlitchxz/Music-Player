@@ -7,5 +7,5 @@ ENJOY
 
 ![Coffee](https://github.com/CastyiGlitchxz/Music-Player/assets/90124265/d7ec100a-d3ee-4525-99f5-bd8d3c53fd73)
 
-Download App(#)
-Visit Website(#)
+Download App
+Visit Website
