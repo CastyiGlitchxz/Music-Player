@@ -71,3 +71,27 @@ html {
   display: flex;
   justify-content: center;
 }
+
+#NextUp {
+  background: white;
+  width: 210px;
+  z-index: 1;
+  height: 400px;
+  position: fixed;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  color: black;
+  margin-top: 15.2%;
+}
+
+.NextTrack {
+  display: flex;
+}
+
+.NextTrack img{
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

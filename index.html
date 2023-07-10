@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Coffee Sounds</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/69e44b2a4c.js" crossorigin="anonymous"></script>
   <link rel="manifest" href="manifest.json" />
 </head>
@@ -20,6 +20,11 @@
         <button onclick="Apply();">Apply</button>
     </div>
 
+  <div id="NextUp">
+    <h2>Next Up</h2>
+    
+  </div>
+
   <div id="SongInfo">
     <img id="AlbumArt" draggable="false">
     <h2 id="SongName">{Song Name}</h2>
@@ -32,6 +37,8 @@
         <p id="Duration">0:00</p>
     </div>
 
+
+
     <div>
         <button class="Controls"><i class="fa-solid fa-shuffle"></i></button>
         <button class="Controls" onclick="Backwards();"><i class="fa-solid fa-backward-step"></i></button>
@@ -41,11 +48,14 @@
     </div>
   </div>
 
+
+
     <audio id="Audio" ontimeupdate="DisplayTime();" title="e">
       <source src="Music/Xenoblade.mp3" title="e">
     </audio>
   
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/Controls.js"></script>
 </body>
 
 </html>
