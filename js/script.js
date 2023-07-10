@@ -35,6 +35,8 @@ document.getElementById("Artist").innerHTML = SongInfo.Artist;
 
 let MusicTime = document.getElementById("MusicTime");
 
+document.getElementById("iBackground").src = AlbumArt;
+
 
 //Controls Media Display thingy for all devices
 
