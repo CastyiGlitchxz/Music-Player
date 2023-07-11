@@ -12,12 +12,14 @@ html {
   body {
     background: black;
     color: white;
+    position: fixed;
+    width: 100%;
   }
   
   .MusicControls {
     width: 100%;
     height: 60px;
-    background: black;
+    background: transparent;
     text-align: center;
   }
 
@@ -116,5 +118,37 @@ html {
   width: 100%;
   height: 60%;
   z-index: -1;
-  filter: blur(8px);
+  filter: blur(10px);
+}
+
+#ApplyBTN {
+  border-radius: 10px;
+  width: 100px;
+  background: transparent;
+  color: white;
+  border-color: blue;
+  border-width: 3px;
+  font-family: 'FontAwesome';
+}
+
+@media only screen and (max-width: 600px) {
+  #SongApply {
+    display: none;
+  }
+
+  #Volume {
+    display: none;
+  }
+
+  #iBackground {
+    position: fixed;
+    width: 100%;
+    height: 52%;
+    z-index: -1;
+    filter: blur(8px);
+  }
+
+  #ApplyBTN {
+    display: none;
+  }
 }
