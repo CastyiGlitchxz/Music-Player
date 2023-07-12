@@ -37,6 +37,28 @@ let MusicTime = document.getElementById("MusicTime");
 
 document.getElementById("iBackground").src = AlbumArt;
 
+function OpenNU() {
+  let NextUp = document.getElementById("NextUp")
+
+  if (window.screen.width <= 600) {
+      if (NextUp.style.marginTop === "152.5%") {
+      NextUp.style.marginTop = "56%";
+      NextUp.style.transition = "all 1s";
+    } else if (NextUp.style.marginTop = "56%") {
+      NextUp.style.marginTop = "152.5%";
+      NextUp.style.transition = "all 1s";
+    }
+  } else {
+    if (NextUp.style.marginTop === "15.2%") {
+      NextUp.style.marginTop = "42.5%";
+      NextUp.style.transition = "all 1s";
+    } else if (NextUp.style.marginTop = "42.5%") {
+      NextUp.style.marginTop = "15.2%";
+      NextUp.style.transition = "all 1s";
+    }
+  }
+}
+
 
 //Controls Media Display thingy for all devices
 

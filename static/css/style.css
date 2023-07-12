@@ -84,7 +84,7 @@ html {
   border-top-right-radius: 20px;
   text-align: center;
   color: black;
-  margin-top: 15.2%;
+  margin-top: 42.5%;
 }
 
 .NextTrack {
@@ -150,5 +150,18 @@ html {
 
   #ApplyBTN {
     display: none;
+  }
+
+  #NextUp {
+  background: white;
+  width: 100%;
+  z-index: 1;
+  height: 60.8%;
+  position: fixed;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  color: black;
+  margin-top: 152.5%;
   }
 }
